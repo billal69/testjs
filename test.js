@@ -17,13 +17,13 @@ function division(){
     result = inputNumber1 / inputNumber2
 // alert("the result of " +  inputNumber1/inputNumber2 +"is : "+ result)
     alert("the result of " +  inputNumber1 + "/" + inputNumber2 +" " +"is : "+ result)
-    alert("the result of " +  5*3+2-1 +"is : "+ result)
+    
 }
 
 function inputPersonName(){
     let personName
     personName=prompt("What is your name")
-    alert("Your name is "+ personName+ "@" +"%")
+    alert("Your name is "+  "@" +personName )
 }
 
 
@@ -36,7 +36,6 @@ function gotoNextPage(){
 function compareTwoNumbers(){
     let number1 = Number(prompt("give me the first number "))
     let number2= Number(prompt("give me the second number"))
-    let number3 = number2
     if(number2 > number1){
         alert("Number 2 is bigger")
     }else{
@@ -341,4 +340,60 @@ function WhatToDisplayInCalculator(){
     }
 
     alert("I have to display in the calculator", result) // 300
+}
+
+
+
+
+
+
+
+
+function testWhile()
+{
+   let x = 1
+
+   while (x < 101) {
+
+        if(x % 3== 0 && x % 5 ==0)
+        {
+            alert("fizzbuzz")
+        }
+        else if( x % 3 == 0  ){
+            alert("fizz")
+        }
+        else if( x % 5 == 0 ){
+            alert("buzz")
+        }        
+        else{
+            alert(x)
+        }
+        x++
+
+                 
+       
+ }
+}
+
+
+function perfectOrNot(){
+    let x =0
+    let number = Number(prompt("number"))
+    for(i=1;i<=number/2;i++){
+        if(number%i==0) 
+        {
+            x = x+i
+        }
+
+    }
+    if(x == number && x !== 0)
+    {
+        alert("perfect")
+    }
+    else
+    {
+        alert("not perfect")
+    }
+    
+
 }
